@@ -15,6 +15,11 @@
 		C80D8CDF1F0C308000DFAA8A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C80D8CDD1F0C308000DFAA8A /* Main.storyboard */; };
 		C80D8CE11F0C308000DFAA8A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C80D8CE01F0C308000DFAA8A /* Assets.xcassets */; };
 		C80D8CE41F0C308000DFAA8A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C80D8CE21F0C308000DFAA8A /* LaunchScreen.storyboard */; };
+		C80D8CEE1F0D182A00DFAA8A /* Hero.sks in Resources */ = {isa = PBXBuildFile; fileRef = C80D8CED1F0D182A00DFAA8A /* Hero.sks */; };
+		C80D8CF01F0D29FE00DFAA8A /* CGFloat+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C80D8CEF1F0D29FE00DFAA8A /* CGFloat+Extensions.swift */; };
+		C80D8CF21F0D3A5E00DFAA8A /* Obstacle.sks in Resources */ = {isa = PBXBuildFile; fileRef = C80D8CF11F0D3A5E00DFAA8A /* Obstacle.sks */; };
+		C80D8CF61F0E89E700DFAA8A /* MSButtonNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = C80D8CF51F0E89E700DFAA8A /* MSButtonNode.swift */; };
+		C80D8CF81F0EAEC300DFAA8A /* GameEffects.sks in Resources */ = {isa = PBXBuildFile; fileRef = C80D8CF71F0EAEC300DFAA8A /* GameEffects.sks */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +33,11 @@
 		C80D8CE01F0C308000DFAA8A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C80D8CE31F0C308000DFAA8A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C80D8CE51F0C308000DFAA8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C80D8CED1F0D182A00DFAA8A /* Hero.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Hero.sks; sourceTree = "<group>"; };
+		C80D8CEF1F0D29FE00DFAA8A /* CGFloat+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGFloat+Extensions.swift"; sourceTree = "<group>"; };
+		C80D8CF11F0D3A5E00DFAA8A /* Obstacle.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Obstacle.sks; sourceTree = "<group>"; };
+		C80D8CF51F0E89E700DFAA8A /* MSButtonNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSButtonNode.swift; sourceTree = "<group>"; };
+		C80D8CF71F0EAEC300DFAA8A /* GameEffects.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameEffects.sks; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,8 +72,13 @@
 			children = (
 				C80D8CD31F0C308000DFAA8A /* AppDelegate.swift */,
 				C80D8CD51F0C308000DFAA8A /* GameScene.sks */,
-				C80D8CD71F0C308000DFAA8A /* Actions.sks */,
 				C80D8CD91F0C308000DFAA8A /* GameScene.swift */,
+				C80D8CF71F0EAEC300DFAA8A /* GameEffects.sks */,
+				C80D8CF51F0E89E700DFAA8A /* MSButtonNode.swift */,
+				C80D8CF11F0D3A5E00DFAA8A /* Obstacle.sks */,
+				C80D8CED1F0D182A00DFAA8A /* Hero.sks */,
+				C80D8CEF1F0D29FE00DFAA8A /* CGFloat+Extensions.swift */,
+				C80D8CD71F0C308000DFAA8A /* Actions.sks */,
 				C80D8CDB1F0C308000DFAA8A /* GameViewController.swift */,
 				C80D8CDD1F0C308000DFAA8A /* Main.storyboard */,
 				C80D8CE01F0C308000DFAA8A /* Assets.xcassets */,
@@ -132,11 +147,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C80D8CF81F0EAEC300DFAA8A /* GameEffects.sks in Resources */,
 				C80D8CDF1F0C308000DFAA8A /* Main.storyboard in Resources */,
 				C80D8CD61F0C308000DFAA8A /* GameScene.sks in Resources */,
 				C80D8CE11F0C308000DFAA8A /* Assets.xcassets in Resources */,
+				C80D8CEE1F0D182A00DFAA8A /* Hero.sks in Resources */,
 				C80D8CE41F0C308000DFAA8A /* LaunchScreen.storyboard in Resources */,
 				C80D8CD81F0C308000DFAA8A /* Actions.sks in Resources */,
+				C80D8CF21F0D3A5E00DFAA8A /* Obstacle.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,7 +167,9 @@
 			files = (
 				C80D8CDA1F0C308000DFAA8A /* GameScene.swift in Sources */,
 				C80D8CDC1F0C308000DFAA8A /* GameViewController.swift in Sources */,
+				C80D8CF01F0D29FE00DFAA8A /* CGFloat+Extensions.swift in Sources */,
 				C80D8CD41F0C308000DFAA8A /* AppDelegate.swift in Sources */,
+				C80D8CF61F0E89E700DFAA8A /* MSButtonNode.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
